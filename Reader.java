@@ -26,8 +26,21 @@ public class Reader {
         System.out.println(String.join(",", bookTitles));
     }
 
+    //возврат книг по количеству
+    public void returnBook(int bookCount) {
+        System.out.println(fullName + " вернул " + bookCount + "книги.");
+    }
 
+    //возврат книг по названию
+    public void returnBook(String... bookTitles) {
+        System.out.print(fullName + " вернул книги: ");
+        System.out.println(String.join(",", bookTitles));
+    }
 
+    //информация о читателе
+    public void printInfo() {
+        System.out.println("Читатель: " + fullName + ", номер билета: " + ticketNumber + ", факультет: " + faculty + ", дата рождения: " + birthDate + ", телефон: " + phone);
+    }
 
 
 
